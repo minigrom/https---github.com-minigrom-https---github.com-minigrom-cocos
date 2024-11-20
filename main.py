@@ -134,9 +134,9 @@ while running:
             screen.blit(cocos, (x_cocos, y_cocos))   
 
         if x_crab > 1900:
-            x_crab -= 25
+            x_crab -= 30
         if x_crab < 0:
-            x_crab += 25
+            x_crab += 30
         if y_cocos > 1000:
             y_cocos = 0
             x_cocos = random.randint(0, 2200)
@@ -159,10 +159,10 @@ while running:
         if button_pressed:
             pos = pygame.mouse.get_pos()
             if invisible_button.check_click(pos):
-                x_crab -= 25
+                x_crab -= 30
                 frame = (frame + 1) % len(crab_icon)
             if invisible_button1.check_click(pos):
-                x_crab += 25
+                x_crab += 30
                 frame = (frame + 1) % len(crab_icon)
     if gameover:
         x_crab, y_crab = 1100, 800
