@@ -94,7 +94,7 @@ while running:
         elapsed_time = time.time() - start_time
         text = font.render("Time: {:.2f}".format(elapsed_time), True, (0, 0, 0))
         text_record = font.render("Record: {:.2f}".format(record), True, (0, 0, 0))
-        screen.blit(text_record, (1900, 10))
+        screen.blit(text_record, (1800, 10))
         screen.blit(text, (10, 10))
         screen.blit(crab, (x_crab, y_crab))
         crab_rect = pygame.Rect(x_crab, y_crab, crab.get_width(), crab.get_height())
